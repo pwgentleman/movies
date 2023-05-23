@@ -21,17 +21,24 @@
         .clickable {
             cursor: pointer;
         }
-        .clickable:hover {
+        .clickable:hover, a[href]:hover {
             background-color: beige;
             text-decoration: underline;
         }
         h2 {
             margin-bottom: 0;
         }
+        #index a {
+            padding: 0 4px;
+        }
+        #index a::after {
+            content: " ";
+        }
     </style>
 </head>
 <body>
 <h1></h1>
+<div id="index"></div>
 <div id="selected"></div>
 <div id="content"></div>
 <!--
